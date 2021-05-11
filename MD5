@@ -1,0 +1,17 @@
+6f0d2bc55b6ceca32378295b0e212139 *DESCRIPTION
+5b370eb7cd0b3405e0713f1b84efa71e *NAMESPACE
+58307ab3544b695da24e0bd79b4b9abc *NEWS.md
+617e91a40849dbc6bd732d08dae545d8 *R/ordinalT.R
+e414f92c8710c18ed2de543621e905a0 *R/ordinalbasic.R
+fa7cc4fdaf737f6394e9924cbd98cef6 *R/signT.R
+15591704248b4692bc9024193efdd6a4 *R/signbasic.R
+c8b83aa19e508b692c772a9d55cb9d98 *README.md
+a3e937259094a3d70a9e687a988dd04c *man/Altopt.Rd
+f970890139090b79f0ee4b69b56dbff5 *man/bic.Rd
+2bc4f10fb4672b3444306d41f2707ab4 *man/fit_continuous_cp.Rd
+011cacb779791a0a33d2929fc5d1459b *man/fit_continuous_tucker.Rd
+d035aa3e3b77bf518a8a3b74d4fe4d59 *man/fit_nonparaT.Rd
+40f6c16ca1d5287c2e1f707ae1ac9a73 *man/fit_ordinal.Rd
+20e3d3ce046f95fa491d4a6974c18b8f *man/likelihood.Rd
+9429ae7eb493090ce8ee17600e640bb5 *man/predict_ordinal.Rd
+7a25adb938cb406191dff62d83250987 *man/realization.Rd
