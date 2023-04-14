@@ -33,16 +33,16 @@ Estimate a signal tensor from a noisy and incomplete data tensor using nonparame
 library(tensorregress)
 indices = c(2,2,2)
 noise = rand_tensor(indices)@data
-Theta = array(runif(prod(indices),min=-2,max = 2),indices)
+Theta = array(runif(prod(indices),min=-1,max = 1),indices)
 
 # The signal plus noise model
 Y = Theta + noise
 
 # Estimate Theta from nonparametic completion method via sign series
-hatTheta = fit_nonparaT(Y,truer = 2,H = 2,Lmin = -2,Lmax = 2, option =2)
+hatTheta = fit_nonparaT(Y,truer = 1,H = 1,Lmin = -1,Lmax = 1, option =2)
 print(hatTheta$est)
 
 }
 \references{
-C. Lee and M. Wang. Beyond the Signs: Nonparametric Tensor Completion via Sign Series. \emph{arXiv preprint arXiv:2102.00384}, 2021.
+C. Lee and M. Wang. Beyond the Signs: Nonparametric Tensor Completion via Sign Series. \emph{Neural Information Processing Systems 34 (NeurIPS)}, 2021.
 }

@@ -35,7 +35,7 @@ Optimize the weighted classification loss given a weight tensor, an observed dat
 }
 \examples{
 library(tensorregress)
-indices = c(2,3,4)
+indices = c(2,2,2)
 noise = rand_tensor(indices)@data
 Theta = array(runif(prod(indices),min=-3,max = 3),indices)
 
@@ -48,5 +48,5 @@ signTheta = sign(result$fitted)
 
 }
 \references{
-C. Lee and M. Wang. Beyond the Signs: Nonparametric Tensor Completion via Sign Series. \emph{arXiv preprint arXiv:2102.00384}, 2021.
+C. Lee and M. Wang. Beyond the Signs: Nonparametric Tensor Completion via Sign Series. \emph{Neural Information Processing Systems 34 (NeurIPS)}, 2021.
 }

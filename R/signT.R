@@ -124,18 +124,18 @@ tensorize=function(X,Y,Z){
 #' @return \code{fitted} - A series of optimizers that minimize the weighted classification loss at each level.
 #' @return \code{est} - An estimated signal tensor based on nonparametic tensor method via sign series.
 #' @usage fit_nonparaT(Y,truer,H,Lmin,Lmax,option = 2)
-#' @references C. Lee and M. Wang. Beyond the Signs: Nonparametric Tensor Completion via Sign Series. \emph{arXiv preprint arXiv:2102.00384}, 2021.
+#' @references C. Lee and M. Wang. Beyond the Signs: Nonparametric Tensor Completion via Sign Series. \emph{Neural Information Processing Systems 34 (NeurIPS)}, 2021.
 #' @examples
 #' library(tensorregress)
 #' indices = c(2,2,2)
 #' noise = rand_tensor(indices)@data
-#' Theta = array(runif(prod(indices),min=-2,max = 2),indices)
+#' Theta = array(runif(prod(indices),min=-1,max = 1),indices)
 #'
 #' # The signal plus noise model
 #' Y = Theta + noise
 #'
 #' # Estimate Theta from nonparametic completion method via sign series
-#' hatTheta = fit_nonparaT(Y,truer = 2,H = 2,Lmin = -2,Lmax = 2, option =2)
+#' hatTheta = fit_nonparaT(Y,truer = 1,H = 1,Lmin = -1,Lmax = 1, option =2)
 #' print(hatTheta$est)
 #'
 #' @export
@@ -213,10 +213,10 @@ SignM=function(Y,truer,H=5,Lmin,Lmax,option=2){
 #' @return \code{error} - Trajectory of errors over iterations.
 #' @return \code{fitted} - A tensor that optimizes the weighted classification loss.
 #' @usage Altopt(Ybar,W,r,type = c("logistic","hinge"),start = "linear")
-#' @references C. Lee and M. Wang. Beyond the Signs: Nonparametric Tensor Completion via Sign Series. \emph{arXiv preprint arXiv:2102.00384}, 2021.
+#' @references C. Lee and M. Wang. Beyond the Signs: Nonparametric Tensor Completion via Sign Series. \emph{Neural Information Processing Systems 34 (NeurIPS)}, 2021.
 #' @examples
 #' library(tensorregress)
-#' indices = c(2,3,4)
+#' indices = c(2,2,2)
 #' noise = rand_tensor(indices)@data
 #' Theta = array(runif(prod(indices),min=-3,max = 3),indices)
 #'
